@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://www.codecademy.com/courses/learn-rails/lessons/start/exercises/start-views?action=lesson_resume -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<script type="text/javascript" src="./Learn Ruby on Rails _ Codecademy_files/8502746af5"></script><script src="./Learn Ruby on Rails _ Codecademy_files/nr-spa-1071.min.js"></script><script src="./Learn Ruby on Rails _ Codecademy_files/1036078779778355" async=""></script><script async="" src="./Learn Ruby on Rails _ Codecademy_files/fbevents.js"></script><script id="facebook-jssdk" src="./Learn Ruby on Rails _ Codecademy_files/sdk.js"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/linkid.js"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/a3w.js"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/analytics.js"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/track.js" id="cio-tracker" data-site-id="a0ffe98b9a714eaaeec1"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/gtm.js"></script><script type="text/javascript" async="" src="./Learn Ruby on Rails _ Codecademy_files/analytics.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8502746af5","applicationID":"2210607","transactionName":"c1hZF0tfVQkEExo0A1NcGCR8ZBkTUEwPExFVRWgKXR1JFw4LUAUWHVteEE0=","queueTime":1,"applicationTime":1023,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwYAVVFXGwECVVFUBwY="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(20),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{h?h-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(21),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(h+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,S=y.hash,this[u]=b.now()}function o(){M--,y.hash!==S&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(10),x=t(11),E=t(8),P=t(6),O=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),N=j.get("tracer");t(15),b.features.spa=!0;var S,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(h,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),P.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),R.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+c),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+c),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(23)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t(23)(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,h,"dom-"),f.inPlace(HTMLHeadElement.prototype,h,"dom-"),f.inPlace(HTMLBodyElement.prototype,h,"dom-"),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(23),a=t("ee").get("promise"),c=i(a),s=t(20),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(23)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,P.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(23)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,P=document.createTextNode(E);new l(a).observe(P,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(19),l=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),c=t(21),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],21:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],22:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(20),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(20),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(22)},{}]},{},["loader",2,15,5,3,4]);</script>
+    <title>Learn Ruby on Rails | Codecademy</title>
+    <link href="https://production.cdmycdn.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+    <link href="https://www.codecademy.com/blog.rss" rel="alternate" title="Codecademy Blog" type="application/rss+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="G3VOrEx/zpBDGeFb3HxEHOh9vI1jkTbQyzlxDGbtd5Q=" name="csrf-token">
+    <meta name="description" content="Codecademy is the easiest way to learn how to code. It&#39;s interactive, fun, and you can do it with your friends.">
+    <meta name="keywords" content="codecademy,coding,code,programming">
+
+
+    
+<meta property="fb:app_id" content="212500508799908">
+<meta property="fb:profile_id" content="codecademy">
+<meta property="og:url" content="https://www.codecademy.com/courses/learn-rails/lessons/start/exercises/start-hello-rails?action=lesson_resume">
+<meta property="og:site_name" content="Codecademy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learn Ruby on Rails">
+<meta property="og:description" content="Codecademy is the easiest way to learn how to code. It&#39;s interactive, fun, and you can do it with your friends.">
+<meta property="og:rich_attachment" content="true">
+<meta property="og:image" content="https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png">
+    
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@codecademy">
+<meta name="twitter:title" content="Learn Ruby on Rails">
+<meta name="twitter:description" content="Codecademy is the easiest way to learn how to code. It&#39;s interactive, fun, and you can do it with your friends.">
+<meta name="twitter:image" content="https://production.cdmycdn.com/assets/logo-codecademy-social-abfd8450722d675bddedde689f8af624.png">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+
+
+    
+    
+
+
+
+
+
+        <link href="./Learn Ruby on Rails _ Codecademy_files/core-14c70252050dc392a80ab9a159fa9b9b.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="./Learn Ruby on Rails _ Codecademy_files/exercise-8c8c3c6300a63fa63ff71b5fa402e9e9.css" media="screen" rel="stylesheet" type="text/css">
+
+
+        <link href="./Learn Ruby on Rails _ Codecademy_files/vendor-2d6881b3d378d021c563.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./Learn Ruby on Rails _ Codecademy_files/platform-2d6881b3d378d021c563.css" media="screen" rel="stylesheet" type="text/css">
+
+
+    <script type="text/javascript">
+//<![CDATA[
+var CCDATA = CCDATA || {};
+//]]>
+</script>
+
+    
+<script id="CCDATA" type="text/javascript">
+//<![CDATA[
+
+  var CCDATA = CCDATA || {};  CCDATA['env'] = "production"; CCDATA['request_host'] = "www.codecademy.com"; CCDATA['request_path'] = "/courses/learn-rails/lessons/start/exercises/start-hello-rails?action=lesson_resume"; CCDATA['asset_host'] = "production.cdmycdn.com"; CCDATA['webpack_public_path'] = "//production.cdmycdn.com/webpack/"; CCDATA['assets_compiled'] = true; CCDATA['pollForNotifications'] = false; CCDATA['locale'] = "en"; CCDATA['API_HOST'] = "/api"; CCDATA['authenticity_token'] = "G3VOrEx/zpBDGeFb3HxEHOh9vI1jkTbQyzlxDGbtd5Q="; CCDATA['available_locales'] = "en|pt|et-EE|fa|en-US|ko|zh|fr|ja|ky-KG|en-GB|fr-FR|es-AR|pt-BR|ar|de|es|ru"; CCDATA['login_requires_captcha'] = false; CCDATA['recaptcha_key'] = "6LeYzQcTAAAAAAqXDQ36Gcb2JKhONzxPRfDOiLE7"; CCDATA['secureSandboxIndexPath'] = "//external-production.codecademy.com/assets/secure/index-e15cd898fa5906b22c02b7fc4cf8e509.html"; CCDATA['secureJSRunnerIndexPath'] = "/assets/webpack/js_runner-f24621759fb7fdfa9f0541fe924a6a3a.html"; CCDATA['workshop_protocol'] = "wss"; CCDATA['workshop_cloud_protocol'] = "https"; CCDATA['workshop_url'] = "workshop.cc-propeller.com:443"; CCDATA['workshop_cloud_domain'] = "cc-propeller.cloud"; CCDATA['current_user'] = {"_id":"5a4c8ed5961bae593f000a73","created_at":"2018-01-03T03:05:41-05:00","url":"http://www.codecademy.com/users/thienle1199","username":"thienle1199","handle":"thienle1199","email":"thienle.luong@gmail.com","name":"","profile_image_url":"https://www.gravatar.com/avatar/78e37afdb0b03b3902b068b347eea323?s=140\u0026d=retro","points":0,"total_points":0,"roles":[],"ui_tour_elements":{},"deleted":false,"authentication_token":"cNsqMgvbJwxGEzzc_3L6","pro":false,"pro_ads":{"currency":"usd","formatted_price":"19.99","period":"month","plan_id":"proV2b","price":1999,"title":"Monthly Plan"},"experiments":{"exp_pro_project_trials_2017_12_20":"experimental","exp_email_2017_02_06":"control","exp_six_month_subscription_2017_12_15":"control"},"location":{"geo_continent":"Asia","geo_country":"VN","geo_city":"Hanoi","geo_postal":null,"geo_region":"HN"}}; CCDATA['codexHost'] = ["codex.codecademy.com"]; CCDATA['codexCredentials'] = ["1514966742","learn-rails.thienle1199","15c47ca6d346b91669f36d48379f744408ac176e"];
+
+//]]>
+</script>
+
+      <script src="./Learn Ruby on Rails _ Codecademy_files/head-2d6881b3d378d021c563.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+        analytics.load("awTEDiBEJ130cCHG1N74clKHGM3FLNzQ");
+        analytics.page();
+      }}();
+
+//]]>
+</script>    <script src="./Learn Ruby on Rails _ Codecademy_files/raven.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+
+      Raven.config('//aed82998e3f445439bef05814d9d2393@sentry.io/134145', {
+        environment: "production",
+        release: "8e7dca4ee053b37e88d69441b3f08f31ac6dcb6a"
+      }).install();
+
+//]]>
+</script>    <!-- Hotjar Tracking Code for www.codecademy.com -->
+    <script type="text/javascript">
+//<![CDATA[
+
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:451715,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+//]]>
+</script><script async="" src="./Learn Ruby on Rails _ Codecademy_files/hotjar-451715.js"></script>
+
+    
+  <script async="" src="./Learn Ruby on Rails _ Codecademy_files/modules-526d80f8c01454f84b75838f21c8706e.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style type="text/css" id="ki-uix-ulj"></style><style type="text/css" id="ki-uix-u14"></style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style></head><script>function inject() {
+	
+	var originalOpenWndFnKey = "originalOpenFunction";
+
+			var originalWindowOpenFn 	= window.open,
+			    originalCreateElementFn = document.createElement,
+			    originalCreateEventFn 	= document.createEvent,
+				windowsWithNames = {};
+			var timeSinceCreateAElement = 0;
+			var lastCreatedAElement = null;
+			var fullScreenOpenTime;
+			var parentOrigin = (window.location != window.parent.location) ? document.referrer: document.location;
+
+			window[originalOpenWndFnKey] = window.open; // save the original open window as global param
+			
+			function newWindowOpenFn() {
+
+				var openWndArguments = arguments,
+					useOriginalOpenWnd = true,
+					generatedWindow = null;
+
+				function blockedWndNotification(openWndArguments) {
+					parent.postMessage({ type: "blockedWindow", args: JSON.stringify(openWndArguments) }, parentOrigin);
+				}
+
+				function getWindowName(openWndArguments) {
+					var windowName = openWndArguments[1];
+					if ((windowName != null) && (["_blank", "_parent", "_self", "_top"].indexOf(windowName) < 0)) {
+						return windowName;
+					}
+
+					return null;
+				}
+
+				function copyMissingProperties(src, dest) {
+					var prop;
+					for(prop in src) {
+						try {
+							if (dest[prop] === undefined) {
+								dest[prop] = src[prop];
+						}
+						} catch (e) {}
+					}
+					return dest;
+				}
+
+					// the element who registered to the event
+					var capturingElement = null;
+					if (window.event != null) {
+						capturingElement = window.event.currentTarget;
+					}
+
+					if (capturingElement == null) {
+						var caller = openWndArguments.callee;
+						while ((caller.arguments != null) && (caller.arguments.callee.caller != null)) {
+							caller = caller.arguments.callee.caller;
+						}
+						if ((caller.arguments != null) && (caller.arguments.length > 0) && (caller.arguments[0].currentTarget != null)) {
+							capturingElement = caller.arguments[0].currentTarget;
+						}
+					}
+
+				/////////////////////////////////////////////////////////////////////////////////
+				// Blocked if a click on background element occurred (<body> or document)
+				/////////////////////////////////////////////////////////////////////////////////
+
+					if ((capturingElement != null) && (
+							(capturingElement instanceof Window) ||
+							(capturingElement === document) ||
+							(
+								(capturingElement.URL != null) && (capturingElement.body != null)
+							) ||
+							(
+								(capturingElement.nodeName != null) && (
+									(capturingElement.nodeName.toLowerCase() == "body") ||
+									(capturingElement.nodeName.toLowerCase() == "#document")
+								)
+							)
+						)) {
+							window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because it was triggered by the " + capturingElement.nodeName + " element";
+							// console.info(window.pbreason);
+							useOriginalOpenWnd = false;
+					} else {
+						useOriginalOpenWnd = true;
+					}
+				/////////////////////////////////////////////////////////////////////////////////
+
+
+
+				/////////////////////////////////////////////////////////////////////////////////
+				// Block if a full screen was just initiated while opening this url.
+				/////////////////////////////////////////////////////////////////////////////////
+
+					// console.info("fullscreen: " + ((new Date()).getTime() - fullScreenOpenTime));
+					// console.info("webkitFullscreenElement: " + document.webkitFullscreenElement);
+					var fullScreenElement = document.webkitFullscreenElement || document.mozFullscreenElement || document.fullscreenElement
+					if ((((new Date()).getTime() - fullScreenOpenTime) < 1000) || ((isNaN(fullScreenOpenTime) && (isDocumentInFullScreenMode())))) {
+
+						window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a full screen was just initiated while opening this url.";
+						// console.info(window.pbreason);
+
+						/* JRA REMOVED
+						if (window[script_params.fullScreenFnKey]) {
+							window.clearTimeout(window[script_params.fullScreenFnKey]);
+						}
+						*/
+
+						if (document.exitFullscreen) {
+							document.exitFullscreen();
+						}
+						else if (document.mozCancelFullScreen) {
+							document.mozCancelFullScreen();
+						}
+						else if (document.webkitCancelFullScreen) {
+							document.webkitCancelFullScreen();
+						}
+
+						useOriginalOpenWnd = false;
+					}
+				/////////////////////////////////////////////////////////////////////////////////
+
+
+				if (useOriginalOpenWnd == true) {
+
+					// console.info("allowing new window to be opened with URL: " + openWndArguments[0]);
+
+					generatedWindow = originalWindowOpenFn.apply(this, openWndArguments);
+
+					// save the window by name, for latter use.
+					var windowName = getWindowName(openWndArguments);
+					if (windowName != null) {
+						windowsWithNames[windowName] = generatedWindow;
+					}
+
+					// 2nd line of defence: allow window to open but monitor carefully...
+
+					/////////////////////////////////////////////////////////////////////////////////
+					// Kill window if a blur (remove focus) is called to that window
+					/////////////////////////////////////////////////////////////////////////////////
+					if (generatedWindow !== window) {
+						var openTime = (new Date()).getTime();
+						var originalWndBlurFn = generatedWindow.blur;
+						generatedWindow.blur = function() {
+							if (((new Date()).getTime() - openTime) < 1000 /* one second */) {
+								window.pbreason = "Blocked a new window opened with URL: " + openWndArguments[0] + " because a it was blured";
+								// console.info(window.pbreason);
+								generatedWindow.close();
+								blockedWndNotification(openWndArguments);
+							} else {
+								// console.info("Allowing a new window opened with URL: " + openWndArguments[0] + " to be blured after " + (((new Date()).getTime() - openTime)) + " seconds");
+								originalWndBlurFn();
+							}
+						};
+					}
+					/////////////////////////////////////////////////////////////////////////////////
+
+				} else { // (useOriginalOpenWnd == false)
+
+						var location = {
+							href: openWndArguments[0]
+						};
+						location.replace = function(url) {
+							location.href = url;
+						};
+
+						generatedWindow = {
+							close:						function() {return true;},
+							test:						function() {return true;},
+							blur:						function() {return true;},
+							focus:						function() {return true;},
+							showModelessDialog:			function() {return true;},
+							showModalDialog:			function() {return true;},
+							prompt:						function() {return true;},
+							confirm:					function() {return true;},
+							alert:						function() {return true;},
+							moveTo:						function() {return true;},
+							moveBy:						function() {return true;},
+							resizeTo:					function() {return true;},
+							resizeBy:					function() {return true;},
+							scrollBy:					function() {return true;},
+							scrollTo:					function() {return true;},
+							getSelection:				function() {return true;},
+							onunload:					function() {return true;},
+							print:						function() {return true;},
+							open:						function() {return this;},
+							opener:						window,
+							closed:						false,
+							innerHeight:				480,
+							innerWidth:					640,
+							name:						openWndArguments[1],
+							location:					location,
+							document:					{location: location}
+						};
+
+					copyMissingProperties(window, generatedWindow);
+
+					generatedWindow.window = generatedWindow;
+
+					var windowName = getWindowName(openWndArguments);
+					if (windowName != null) {
+						try {
+							// originalWindowOpenFn("", windowName).close();
+							windowsWithNames[windowName].close();
+							// console.info("Closed window with the following name: " + windowName);
+						} catch (err) {
+							// console.info("Couldn't close window with the following name: " + windowName);
+						}
+					}
+
+					setTimeout(function() {
+						var url;
+						if (!(generatedWindow.location instanceof Object)) {
+							url = generatedWindow.location;
+						} else if (!(generatedWindow.document.location instanceof Object)) {
+							url = generatedWindow.document.location;
+						} else if (location.href != null) {
+							url = location.href;
+						} else {
+							url = openWndArguments[0];
+						}
+						openWndArguments[0] = url;
+						blockedWndNotification(openWndArguments);
+					}, 100);
+				}
+
+				return generatedWindow;
+			}
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Replace the window open method with Poper Blocker's
+			/////////////////////////////////////////////////////////////////////////////////
+			window.open = function() {
+				try {
+					return newWindowOpenFn.apply(this, arguments);
+				} catch(err) {
+					return null;
+				}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////
+			// Monitor dynamic html element creation to prevent generating <a> elements with click dispatching event
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////
+			document.createElement = function() {
+
+					var newElement = originalCreateElementFn.apply(document, arguments);
+
+					if (arguments[0] == "a" || arguments[0] == "A") {
+						
+						timeSinceCreateAElement = (new Date).getTime();
+
+						var originalDispatchEventFn = newElement.dispatchEvent;
+
+						newElement.dispatchEvent = function(event) {
+							if (event.type != null && (("" + event.type).toLocaleLowerCase() == "click")) {
+								window.pbreason = "blocked due to an explicit dispatchEvent event with type 'click' on an 'a' tag";
+								// console.info(window.pbreason);
+								parent.postMessage({type:"blockedWindow", args: JSON.stringify({"0": newElement.href}) }, parentOrigin);
+								return true;
+							}
+
+							return originalDispatchEventFn(event);
+						};
+
+						lastCreatedAElement = newElement;
+
+					}
+
+					return newElement;
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Block artificial mouse click on frashly created <a> elements
+			/////////////////////////////////////////////////////////////////////////////////
+			document.createEvent = function() {
+				try {
+					if ((arguments[0].toLowerCase().indexOf("mouse") >= 0) && ((new Date).getTime() - timeSinceCreateAElement) <= 50) {
+						window.pbreason = "Blocked because 'a' element was recently created and " + arguments[0] + " event was created shortly after";
+						// console.info(window.pbreason);
+						arguments[0] = lastCreatedAElement.href;
+						parent.postMessage({ type: "blockedWindow", args: JSON.stringify({"0": lastCreatedAElement.href}) }, parentOrigin);
+						return null;
+					}
+					return originalCreateEventFn.apply(document, arguments);
+				} catch(err) {}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+			/////////////////////////////////////////////////////////////////////////////////
+			// Monitor full screen requests
+			/////////////////////////////////////////////////////////////////////////////////
+			function onFullScreen(isInFullScreenMode) {
+					if (isInFullScreenMode) {
+						fullScreenOpenTime = (new Date()).getTime();
+						// console.info("fullScreenOpenTime = " + fullScreenOpenTime);
+					} else {
+						fullScreenOpenTime = NaN;
+					}
+			};
+			/////////////////////////////////////////////////////////////////////////////////
+
+			function isDocumentInFullScreenMode() {
+				// Note that the browser fullscreen (triggered by short keys) might
+				// be considered different from content fullscreen when expecting a boolean
+				return ((document.fullScreenElement && document.fullScreenElement !== null) ||    // alternative standard methods
+					((document.mozFullscreenElement != null) || (document.webkitFullscreenElement != null)));                   // current working methods
+			}
+
+			document.addEventListener("fullscreenchange", function () {
+				onFullScreen(document.fullscreen);
+			}, false);
+
+			document.addEventListener("mozfullscreenchange", function () {
+				onFullScreen(document.mozFullScreen);
+			}, false);
+
+			document.addEventListener("webkitfullscreenchange", function () {
+				onFullScreen(document.webkitIsFullScreen);
+			}, false);
+
+		} inject()</script>
+
+  <body browser="linux" class="">
+
+    
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Learn Ruby on Rails _ Codecademy_files/lY4eZXm_YWu.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+  <script type="text/javascript">
+//<![CDATA[
+
+    var FB_APP_ID = '212500508799908';
+    window.fbAsyncInit = function() {
+      var FB = (window.FB || undefined);
+      if (FB) {
+        FB.init({
+          appId      : FB_APP_ID
+        , channelUrl : window.root_url+'/channel.html'
+        , status     : true
+        , cookie     : true
+        , xfbml      : true
+        , version    : 'v2.8'
+        });
+      }
+    };
+    <!-- Load Facebook SDK for JavaScript -->
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+//]]>
+</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+     document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+     fbq('init', '1036078779778355');
+     fbq('track', "PageView");</script>
+    <noscript>&lt;img height="1" width="1" style="display:none"
+     src="https://www.facebook.com/tr?id=1036078779778355&amp;ev=PageView&amp;noscript=1"
+     /&gt;</noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+      <div class="react-root" data-react-class="PlatformRouter" aria-hidden="true"><section class="_255U1OEW5iAFH7qz_pHXM8" data-reactroot="" data-reactid="1"><div id="workspace" class="francine" data-reactid="2"><!-- react-empty: 3 --><header class="_2m_hDXMtwvETHFo3eGaTXE" data-react-header="true" data-reactid="4"><nav class="y7tvmmg7fKu4JpdaYECtN _2Tp4ILE5wDYNdLO-nT8psj" data-reactid="5"><section class="_2zSA2d9oAw82vmGaiCI6HM vE2U5Z1_1p0OevhTkRrpb" data-reactid="6"><div class="_3bI54mnYg5essxyEwnBsko _3nDVtg6dS-0_R6p0nDL-1S" data-reactid="7"><a class="_1xOZs_2pgZHAoG4MALaCgS" href="https://www.codecademy.com/" data-reactid="8"><img alt="Codecademy logo" class="_39eW0wHuW9g7pG5q6TF7cE" src="./Learn Ruby on Rails _ Codecademy_files/847a0418af3a85a6b3e427923a3c9c10.svg" data-reactid="9"></a></div></section><section class="_2zSA2d9oAw82vmGaiCI6HM AcoUR5q2eKWoCC4M_4RZD" data-reactid="10"><a class="_10tr0UBdh7IJTF1w-ahcOa _2Ik8dH0qI7ki4IMCQbG6pZ" href="https://www.codecademy.com/learn/learn-rails" data-reactid="11"><i class="_2s1fAUUBvIvC87s1stozEY fcn-icon fcn-icon-arrowPrev" data-reactid="12"></i><!-- react-text: 13 -->Learn Ruby on Rails<!-- /react-text --></a></section><section class="_2zSA2d9oAw82vmGaiCI6HM _1KKDVD6unnpNtKqV9PPUQP" data-reactid="14"><div class="_3bI54mnYg5essxyEwnBsko _1f1KmfrKUtLxZllTyx0TrC _3nDVtg6dS-0_R6p0nDL-1S _2kwp78w4gxSQjvTSajoa6Q" data-reactid="15"><div class="fcn-godex-status-container" data-reactid="16"><div class="fcn-godex-status--hidden fcn-godex-status fcn-godex-status--success" data-reactid="17"><span data-reactid="18">Connected to Codecademy</span><div class="fcn-godex-status__glow" data-reactid="19"></div></div></div></div><div class="_3bI54mnYg5essxyEwnBsko _1f1KmfrKUtLxZllTyx0TrC _3nDVtg6dS-0_R6p0nDL-1S" data-reactid="20"><div class="_3wrXGt5j2uE4fjlPLrDXEA" data-reactid="21"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _1i2HDK_zSufmryADoGTYpD" data-reactid="22"><span data-reactid="23"><div class="_2gwf_JaG35W2Q5PrPxyOlQ _3vnnbQAlMOhQFZ-wuCOyca" data-reactid="24"><span class="new-cc-icon icon-bell" data-reactid="25"></span></div></span></div><!-- react-empty: 26 --></div></div><div class="_3bI54mnYg5essxyEwnBsko _1f1KmfrKUtLxZllTyx0TrC _3nDVtg6dS-0_R6p0nDL-1S" data-reactid="27"><div class="_3wrXGt5j2uE4fjlPLrDXEA" data-reactid="28"><button id="dropdown-toggle" class="_3beJdIRG9xxfeiRwaBD9Cp" data-reactid="29"><div class="Y8dknuoW8NLiudcM-zQib _1pl0auxsnexFW5uqwCQW_x _2tbl3cOSPjsfIWBMlHZgcG" data-reactid="30"><img class="wXEAS7H2e7UsikVkXNety" src="./Learn Ruby on Rails _ Codecademy_files/78e37afdb0b03b3902b068b347eea323" data-reactid="31"></div></button><!-- react-empty: 32 --></div></div></section></nav></header><div class="discovery-cue discovery-cue--hidden" style="left:NaN%;top:NaN%;" data-reactid="38"><div class="discovery-cue--content-container" data-reactid="39"><div class="discovery-cue__arrow" data-reactid="40"></div><p class="discovery-cue--content" data-reactid="41">Drag the edges to resize the window.</p></div><div class="pulse" data-reactid="42"></div></div><div class="discovery-cue discovery-cue--hidden" style="left:NaN%;top:NaN%;" data-reactid="43"><div class="discovery-cue--content-container" data-reactid="44"><div class="discovery-cue__arrow" data-reactid="45"></div><p class="discovery-cue--content" data-reactid="46">In Projects, you can keep track of your progress as you go throught the tasks. Check each item as you complete it!</p></div><div class="pulse" data-reactid="47"></div></div><div class="fcn-grid" style="cursor: auto;"><div id="discovery-resize-1" class="fcn-slot fcn-slot--no-top-neighbor" data-fcn-arrangement="1" style="position: absolute; top: 0%; right: 33.3333%; bottom: 50%; left: 33.3333%;"><div class="fcn-component"><div class="overlay"></div><div class="_3xwXqfnfophSAz4k43MZx0"><div><!-- react-empty: 1333 --></div><!-- react-empty: 1334 --><!-- react-empty: 1335 --><div class="UOyJ1QHGjs_CaX0WcMfJz"><div class="_2ecPkdASqbJY2gtDfJzOEI"><div class="_1xYsKECYwIBS11UWPDPPiW"><p class="_1-YCywxtxg6JvYzWFaC1p _33HbdmMgZSIgji1116HPix"></p><div><div class="_2Bvd5Z1s1DcnwDsezQIfQy"><div class="_1dL0UNjWQnFTmXtH4QiRcP"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3VCznYtrtljbygtFhuZMu3"><i name="close" class="_3QwoyZ-5nUFRrbC-LsvaCS iu2-iQOP2kLjUfwL-O9uF"></i></div></div></div></div><div class="R7vhd3SACTy07Y4zJpuD2"><div><div title="files" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 3px;"><i name="arrow-filled-down" class="_3QwoyZ-5nUFRrbC-LsvaCS _1vH4iWOWu95AyfFlNEqoyU"></i><span>files</span></div><div><div title="app" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-down" class="_3QwoyZ-5nUFRrbC-LsvaCS _1vH4iWOWu95AyfFlNEqoyU"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>app</span></div><div><div title="assets" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>assets</span></div></div><div><div title="controllers" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>controllers</span></div></div><div><div title="helpers" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>helpers</span></div></div><div><div title="mailers" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>mailers</span></div></div><div><div title="models" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>models</span></div></div><div><div title="views" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 26.25px;"><i name="arrow-filled-down" class="_3QwoyZ-5nUFRrbC-LsvaCS _1vH4iWOWu95AyfFlNEqoyU"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>views</span></div><div><div title="layouts" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 41.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>layouts</span></div></div><div><div title="pages" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 41.25px;"><i name="arrow-filled-down" class="_3QwoyZ-5nUFRrbC-LsvaCS _1vH4iWOWu95AyfFlNEqoyU"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>pages</span></div><div><div title="home.html.erb" class="_2S_Mk4yha6MLQ2gzzmMf7b afjJ6NLiwANUSIhSMU48Y" style="padding-left: 56.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>home.html.erb</span></div></div></div></div></div><div><div title="bin" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>bin</span></div></div><div><div title="config" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>config</span></div></div><div><div title="db" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>db</span></div></div><div><div title="lib" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>lib</span></div></div><div><div title="log" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>log</span></div></div><div><div title="public" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>public</span></div></div><div><div title="spec" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>spec</span></div></div><div><div title="test" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>test</span></div></div><div><div title="tmp" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i name="arrow-filled-right" class="_3QwoyZ-5nUFRrbC-LsvaCS _2EMUEliUcWAb8kddHOZXEl"></i><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3hmF-Y-oJ8GEEhIjP6MLO_ OHVBV-iVr4Lvf8qIHEgwG" name="folder-filled"></i><span>tmp</span></div></div><div><div title="Gemfile" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>Gemfile</span></div></div><div><div title="Gemfile.lock" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>Gemfile.lock</span></div></div><div><div title="README.rdoc" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>README.rdoc</span></div></div><div><div title="Rakefile" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>Rakefile</span></div></div><div><div title="config.ru" class="_2S_Mk4yha6MLQ2gzzmMf7b" style="padding-left: 11.25px;"><i class="_3QwoyZ-5nUFRrbC-LsvaCS TWIDtBm1jENtZR52HVzll _3RTrUijirzk8o_LJuJ_ORY" name="file"></i><span>config.ru</span></div></div></div></div><!-- react-empty: 1345 --></div></div><div class="editor _2daY-AHjVXG_ugnn54TPr4"><div class="fcn-component-header"><div class=""><div class="fcn-tabs"><span size="100" overflow="true" class="fcn-tabs__tab fcn-tabs__tab--can-close fcn-button fcn-button--tab fcn-button--tab--active" style="max-width: 200px; width: 100%;"><span class="fcn-control fcn-icon fcn-icon-close [object Object]"></span><!-- react-text: 1787 -->home.html.erb<!-- /react-text --><span class="fcn-tab__gradient"></span></span><span class="fcn-tabs__tab fcn-tabs__tab--align-right fcn-button fcn-button--tab fcn-button--tab--inactive fcn-control" data-cue="discovery-fullscreen" overflow="false" style="max-width: 200px;"><i name="fullscreen" class="_3QwoyZ-5nUFRrbC-LsvaCS _2fS_OWNv_ecvbxHy0AwJKk"></i></span></div></div></div><div class="editor-container"><div class="_34io1W8CNlzGxPabtqLq9q _3xp4c3Gvny8Oap6jE2-Q_ _2RE0-ZG6UYzWFn9_EER397 _3b_341TEqA36zu-puR7tRZ"><div class="CodeMirror cm-s-cc CodeMirror-wrap CodeMirror-overlayscroll" style="height: 170px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 111px; left: 96px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-overlayscroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-overlayscroll-vertical" cm-not-content="true" style="display: none; bottom: 0px;"><div style="height: 45.3535px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 57px; margin-bottom: -15px; border-right-width: 15px; min-height: 136px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>6</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 39px; top: 101px; height: 13px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 39px; width: 9px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"main"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 39px; width: 9px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 39px; width: 9px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Hello my name is _<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">4</div><div class="CodeMirror-gutter-elt" style="left: 39px; width: 9px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>I make Rails apps.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -57px; width: 57px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -57px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 10px; width: 21px;">6</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 136px;"></div><div class="CodeMirror-gutters" style="height: 151px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div></div><div class="editor-footer-container"><!-- react-empty: 1363 --><div class="editor-footer"><div class="fcn-tabs-container"><div class="editor-footer__buttons"><div class="_2SwuUNiEqk9B4NR0dyMMmn"><button data-btn="true" class="_2fDy3KzGIsY8FHMg74ib-V lx0K4MugD9fFT3l5pAqK1 _3JhIcVa8SAUiC1_ZETEt6G" style="min-width: 80px;" disabled=""><div class="fcn-spinner"></div></button><div class="_2rMsW52-vRt_jDn9YIoIoj" style="opacity: 1; margin-top: 0px;"><span class="_2ieC2TsGV0VNSmeBczgbwo">Reset Exercise</span><div class="bCD0tEslEFIV_i4IX_5ip"></div><span class="fcn-tabs__tab fcn-button fcn-button--tab fcn-button--tab--inactive fcn-control" overflow="false" style="max-width: 200px;"><i name="reset" class="_3QwoyZ-5nUFRrbC-LsvaCS _3LkjVgY6sd3NulMSJp3dAY"></i></span></div></div></div></div></div></div></div></div></div></div></div><div id="discovery-resize-25" class="fcn-slot fcn-slot--no-top-neighbor fcn-slot--no-right-neighbor fcn-slot--no-bottom-neighbor" data-fcn-arrangement="25" style="position: absolute; top: 0%; right: 0%; bottom: 0%; left: 66.6667%;"><div class="fcn-component"><div class="overlay"></div><div class="_1XRkeRcO7hh1axYhmKiQMM _3l5vJxhTbS1dLnkuNf4EaO CGAmiC7XFUbztkDJDC6gJ _2OvvmRIMuApp9TWMONyVY"><div class="_1XRkeRcO7hh1axYhmKiQMM _3zmXSoSKWDZwAbwY9BEJ3U"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3VCznYtrtljbygtFhuZMu3"><i name="arrow-thin-left" class="_3QwoyZ-5nUFRrbC-LsvaCS _2DRF0mEeD3kktNs1rQjEmB"></i></div><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3VCznYtrtljbygtFhuZMu3"><i name="refresh" class="_3QwoyZ-5nUFRrbC-LsvaCS _9n2A_QUFSbpWAfM7S4vd0"></i></div><div class="_1XRkeRcO7hh1axYhmKiQMM _3l5vJxhTbS1dLnkuNf4EaO CGAmiC7XFUbztkDJDC6gJ _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3sETS9JJLUqGkoznU-8YAu"><input type="text" class="_11Puwwj-R91dvpnHmBsMY7" placeholder="Type URL here"></div><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3VCznYtrtljbygtFhuZMu3"><i name="fullscreen" class="_3QwoyZ-5nUFRrbC-LsvaCS _2fS_OWNv_ecvbxHy0AwJKk"></i></div></div><div class="_1XRkeRcO7hh1axYhmKiQMM _3l5vJxhTbS1dLnkuNf4EaO CGAmiC7XFUbztkDJDC6gJ _2OvvmRIMuApp9TWMONyVY _2thFqfPxT5Ddfc14CgiZqJ"><div class="_1XRkeRcO7hh1axYhmKiQMM _3l5vJxhTbS1dLnkuNf4EaO CGAmiC7XFUbztkDJDC6gJ _2OvvmRIMuApp9TWMONyVY _39K0C3ph1hpmLw6tsBfNnG GEk9Sbt3OmLggMB2aQtSj _3bADe6ag4wwBffEyE7bJ2O _2MHZDvkiIZKj8Se2ziQBfY"><i name="explore" size="3" class="_3QwoyZ-5nUFRrbC-LsvaCS _1QDkpLnQ1Ql3Q8znCwA1p-" style="font-size: 48px;"></i><div class="_1M6xxzpBgnnZ5pMaxvOnjP">Web Browser</div></div></div><!-- react-empty: 1391 --></div></div></div><div id="discovery-resize-4" class="fcn-slot fcn-slot--no-bottom-neighbor" data-fcn-arrangement="4" style="position: absolute; top: 50%; right: 33.3333%; bottom: 0%; left: 33.3333%;"><div class="fcn-component"><div class="overlay"></div><div class="fcn-terminal-container fcn-terminal-container--with-header"><div class="fcn-component-header fcn-component-header--tabs"><div class="fcn-tabs"><span class="fcn-tabs__tab fcn-button fcn-button--tab fcn-button--tab--inactive fcn-icon fcn-icon-plus fcn-control" overflow="false" style="max-width: 200px;"></span><div class="fcn-tabs-container__inner"></div><span class="fcn-tabs__tab fcn-tabs__tab--align-right fcn-button fcn-button--tab fcn-button--tab--inactive fcn-control fcn-icon fcn-icon-fullscreen" overflow="false" style="max-width: 200px;"></span></div></div><div class="fcn-terminal-container__placeholder"><div class="fcn-terminal-container__placeholder__body"><div class="fcn-terminal-container__placeholder__icon fcn-icon fcn-icon-terminal"></div><span class="fcn-terminal-container__placeholder__text">Terminal</span><span class="fcn-terminal-container__placeholder__text"><button data-btn="true" class="_2fDy3KzGIsY8FHMg74ib-V lx0K4MugD9fFT3l5pAqK1 _1mQgyp76JXoCrTvLgR_p-d" style="margin-top: 20px;">New session</button></span></div></div><!-- react-empty: 1408 --></div></div></div><div id="discovery-resize-03" class="fcn-slot fcn-slot--no-top-neighbor fcn-slot--no-bottom-neighbor fcn-slot--no-left-neighbor" data-fcn-arrangement="03" style="position: absolute; top: 0%; right: 66.6667%; bottom: 0%; left: 0%;"><div class="fcn-component"><div class="overlay"></div><div><div class="accordion-container"><div class="accordion" style="height: 1530px;"><div class="accordion-section"><div data-index="0" class="accordion-section-heading invisible"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG learn-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _1Yp0Evc34IpeX4cliaOuxn _-28pXLJ13HOUfP_2pXrEi" name="learn"></i><!-- react-text: 1419 -->Learn<!-- /react-text --></div></div><div class="accordion-section-body"><div class="_1PzvoBkjTI2SFvb5o9YAHW"><div class="_3gk_DKHLRJuZpEOugKJSur">Getting Started</div><h1 class="_2zPle5d5nr1wxSe5NwLfcB">Views</h1><div class="jfdpfOzslotw2euWgxJNN"><p>Well done! Now when a user visits <code>http://localhost:8000/welcome</code>, the route</p>
+<pre><code><span wrap="true" class="_18cGopAuUQVCOplu8pL9b5 _12mn8XNbByNCYxyzndA6if _3xp4c3Gvny8Oap6jE2-Q_ _2RE0-ZG6UYzWFn9_EER397 undefined" data-reactroot="" data-reactid="1" data-react-checksum="-222993438"><div class="CodeMirror" data-reactid="2"><!-- react-text: 3 -->get 'welcome' =&gt; 'pages#home'<!-- /react-text --></div></span>
+</code></pre><p>will tell Rails to send this request to the Pages controller's <code>home</code> action.</p>
+</div></div></div></div><div class="accordion-section"><div data-index="1" class="accordion-section-heading invisible"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2jyOQuyyXLbnU5qEkBUx8S _-28pXLJ13HOUfP_2pXrEi" name="instructions"></i><!-- react-text: 1429 -->Instructions<!-- /react-text --></div></div><div class="accordion-section-body"><div><div><div class="fcn-checkpoint"><b class="fcn-checkpoint__number"><!-- react-text: 1435 -->1<!-- /react-text --><!-- react-text: 1436 -->.<!-- /react-text --></b><div class="fcn-checkpoint__body"><div class="jfdpfOzslotw2euWgxJNN"><p>Now that we have a controller and a route, let's move on to the third part of the request/response cycle and create a view. </p>
+<p>Open <strong>app/views/pages/home.html.erb</strong>, and type in the following HTML. Fill in your own name. </p>
+<pre><code class="lang-html"><span wrap="true" class="_18cGopAuUQVCOplu8pL9b5 _12mn8XNbByNCYxyzndA6if _3xp4c3Gvny8Oap6jE2-Q_ _2RE0-ZG6UYzWFn9_EER397 undefined" data-reactroot="" data-reactid="1" data-react-checksum="-348645178"><div class="CodeMirror" data-reactid="2"><span class="cm-tag bracket" data-reactid="3">&lt;</span><span class="cm-tag" data-reactid="4">div</span><!-- react-text: 5 --> <!-- /react-text --><span class="cm-attribute" data-reactid="6">class</span><!-- react-text: 7 -->=<!-- /react-text --><span class="cm-string" data-reactid="8">"main"</span><span class="cm-tag bracket" data-reactid="9">&gt;</span><!-- react-text: 10 -->
+<!-- /react-text --><!-- react-text: 11 -->  <!-- /react-text --><span class="cm-tag bracket" data-reactid="12">&lt;</span><span class="cm-tag" data-reactid="13">div</span><!-- react-text: 14 --> <!-- /react-text --><span class="cm-attribute" data-reactid="15">class</span><!-- react-text: 16 -->=<!-- /react-text --><span class="cm-string" data-reactid="17">"container"</span><span class="cm-tag bracket" data-reactid="18">&gt;</span><!-- react-text: 19 -->
+<!-- /react-text --><!-- react-text: 20 -->    <!-- /react-text --><span class="cm-tag bracket" data-reactid="21">&lt;</span><span class="cm-tag" data-reactid="22">h1</span><span class="cm-tag bracket" data-reactid="23">&gt;</span><!-- react-text: 24 -->Hello my name is __<!-- /react-text --><span class="cm-tag bracket" data-reactid="25">&lt;/</span><span class="cm-tag" data-reactid="26">h1</span><span class="cm-tag bracket" data-reactid="27">&gt;</span><!-- react-text: 28 -->
+<!-- /react-text --><!-- react-text: 29 -->    <!-- /react-text --><span class="cm-tag bracket" data-reactid="30">&lt;</span><span class="cm-tag" data-reactid="31">p</span><span class="cm-tag bracket" data-reactid="32">&gt;</span><!-- react-text: 33 -->I make Rails apps.<!-- /react-text --><span class="cm-tag bracket" data-reactid="34">&lt;/</span><span class="cm-tag" data-reactid="35">p</span><span class="cm-tag bracket" data-reactid="36">&gt;</span><!-- react-text: 37 -->
+<!-- /react-text --><!-- react-text: 38 -->  <!-- /react-text --><span class="cm-tag bracket" data-reactid="39">&lt;/</span><span class="cm-tag" data-reactid="40">div</span><span class="cm-tag bracket" data-reactid="41">&gt;</span><!-- react-text: 42 -->
+<!-- /react-text --><span class="cm-tag bracket" data-reactid="43">&lt;/</span><span class="cm-tag" data-reactid="44">div</span><span class="cm-tag bracket" data-reactid="45">&gt;</span></div></span>
+</code></pre>
+<p>We've provided CSS in the file <strong>app/assets/stylesheets/pages.css.scss</strong>.</p>
+</div></div><div class="fcn-checkpoint__checkbox"><div class="fcn-icon "></div></div></div></div><div><div class="fcn-checkpoint fcn-checkpoint--disabled"><b class="fcn-checkpoint__number"><!-- react-text: 1499 -->2<!-- /react-text --><!-- react-text: 1500 -->.<!-- /react-text --></b><div class="fcn-checkpoint__body"><div class="jfdpfOzslotw2euWgxJNN"><p>View your app by visiting <a href="http://localhost:8000/welcome">http://localhost:8000/welcome</a> in the browser.</p>
+</div></div><div class="fcn-checkpoint__checkbox"><div class="fcn-icon "></div></div></div></div></div></div></div><div class="accordion-section"><div data-index="2" class="accordion-section-heading"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3c8P9HXAp_90KuA0PL59Le _-28pXLJ13HOUfP_2pXrEi" name="comments"></i><!-- react-text: 1445 -->Community Forums<!-- /react-text --></div></div><div class="accordion-section-body"><div class="_1PzvoBkjTI2SFvb5o9YAHW"><p>Get help and ask questions on the Codecademy community forums.</p><a data-btn="true" target="_blank" href="https://discuss.codecademy.com/c/learn-rails/start/" class="_2fDy3KzGIsY8FHMg74ib-V _2z3z7UYVLtbrUgoABCutQm">Go to the forums</a></div></div></div><div class="accordion-section"><div data-index="3" class="accordion-section-heading"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG support-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2d4F_uhsoeUW39e5KLQ7A_ _-28pXLJ13HOUfP_2pXrEi" name="support"></i><!-- react-text: 1454 -->Report a Bug<!-- /react-text --></div></div><div class="accordion-section-body"><div class="accordion-section-body__no-bg accordion-section-body__padded _1OKgxa6eFiKV7bZx2Cpyve"><span><div class="VaiJa78yYYnolwnIsOcUV" style="opacity: 1; transform: translateY(0px);"><!-- react-text: 1459 -->If you see a bug or any other issue with this page, please report it <!-- /react-text --><a class="_2gPEYd35kAAQ2razCHgCKk" href="https://www.codecademy.com/courses/learn-rails/lessons/start/exercises/start-views?action=lesson_resume#">here</a><!-- react-text: 1461 -->.<!-- /react-text --></div></span></div></div></div></div></div><div class="sticky-bottom"><div class="accordion-section-heading invisible" data-index="0"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG learn-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _1Yp0Evc34IpeX4cliaOuxn _-28pXLJ13HOUfP_2pXrEi" name="learn"></i><!-- react-text: 1466 -->Learn<!-- /react-text --></div></div><div class="accordion-section-heading invisible" data-index="1"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2jyOQuyyXLbnU5qEkBUx8S _-28pXLJ13HOUfP_2pXrEi" name="instructions"></i><!-- react-text: 1470 -->Instructions<!-- /react-text --></div></div><div class="accordion-section-heading" data-index="2"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3c8P9HXAp_90KuA0PL59Le _-28pXLJ13HOUfP_2pXrEi" name="comments"></i><!-- react-text: 1474 -->Community Forums<!-- /react-text --></div></div><div class="accordion-section-heading" data-index="3"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG support-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2d4F_uhsoeUW39e5KLQ7A_ _-28pXLJ13HOUfP_2pXrEi" name="support"></i><!-- react-text: 1478 -->Report a Bug<!-- /react-text --></div></div></div><div class="sticky-top"><div class="accordion-section-heading" data-index="0"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG learn-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _1Yp0Evc34IpeX4cliaOuxn _-28pXLJ13HOUfP_2pXrEi" name="learn"></i><!-- react-text: 1483 -->Learn<!-- /react-text --></div></div><div class="accordion-section-heading" data-index="1"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2jyOQuyyXLbnU5qEkBUx8S _-28pXLJ13HOUfP_2pXrEi" name="instructions"></i><!-- react-text: 1487 -->Instructions<!-- /react-text --></div></div><div class="accordion-section-heading invisible" data-index="2"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _3c8P9HXAp_90KuA0PL59Le _-28pXLJ13HOUfP_2pXrEi" name="comments"></i><!-- react-text: 1491 -->Community Forums<!-- /react-text --></div></div><div class="accordion-section-heading invisible" data-index="3"><div class="_1XRkeRcO7hh1axYhmKiQMM _39K0C3ph1hpmLw6tsBfNnG support-header"><i class="_3QwoyZ-5nUFRrbC-LsvaCS _2d4F_uhsoeUW39e5KLQ7A_ _-28pXLJ13HOUfP_2pXrEi" name="support"></i><!-- react-text: 1495 -->Report a Bug<!-- /react-text --></div></div></div></div></div></div></div><div class="fcn-achievement-alerts" data-reactid="127"><ul class="fcn-achievement-alerts__list" data-reactid="128"><li><div><div class="fcn-alert-box fcn-alert-box--hidden"><div class="fcn-alert-box__close"><span class="fcn-icon fcn-icon-close"></span></div><div class="grid-row fcn-alert-box__contents"><div class="grid-col-4"><span class="cc-achievement cc-achievement--code-achievement"></span></div><div class="grid-col-8 fcn-alert-box__text"><p>Congratulations! You earned a new achievement:</p><p><strong>Max Streak Count of 1</strong></p></div></div></div></div></li></ul></div><nav title="5. Views" class="y7tvmmg7fKu4JpdaYECtN uLjMYUmq7NHQCvtXjbgKs _3bR5y3xpD2FPv1oUg-7n_p" data-reactid="129"><section class="_2zSA2d9oAw82vmGaiCI6HM vE2U5Z1_1p0OevhTkRrpb" data-reactid="130"><div class="_3bI54mnYg5essxyEwnBsko" data-reactid="131"><a href="https://www.codecademy.com/courses/learn-rails/lessons/start/exercises/start-views?action=lesson_resume#" title="5. Views" class="sQnqIKjyMIkRzU8m4doIc" data-reactid="132"><span class="_3m2VRSnyzwTJFQ2lQGREuS" data-reactid="133"></span><span data-cue="course-navigator" class="_3oO95TdRvdS0utiixuV0t3" data-reactid="134">5. Views</span></a></div></section><section class="_2zSA2d9oAw82vmGaiCI6HM AcoUR5q2eKWoCC4M_4RZD" data-reactid="135"><div class="fcn-nav-wrapper" data-reactid="136"><div class="fcn-nav-wrapper__center fcn-progress-container" data-reactid="137"><button class="fcn-button fcn-button--everyday" data-reactid="138">Back</button><div class="fnc-nav__exercise-count" data-reactid="139">5/6</div><button id="discovery-next" class="fcn-button fcn-button--everyday fcn-button--inactive" data-reactid="140">Next</button></div></div></section><section class="_2zSA2d9oAw82vmGaiCI6HM _1KKDVD6unnpNtKqV9PPUQP" data-reactid="141"><button class="fcn-button fcn-button--everyday" data-reactid="142"><!-- react-text: 143 -->Get Help<!-- /react-text --><!-- react-empty: 144 --></button></section><!-- react-empty: 145 --></nav></div><!-- react-empty: 146 --></section></div>
+
+
+
+      
+
+
+
+
+
+    
+
+    
+<script id="I18N" type="text/javascript">
+//<![CDATA[
+
+  var I18n = (window.I18n || {});
+  I18n.defaultLocale = "en";
+  I18n.fallbacks = true;
+  I18n.locale = "en";
+  I18n.missingTranslationPrefix = '';
+    I18n.missingBehaviour = 'guess';
+
+//]]>
+</script><script src="./Learn Ruby on Rails _ Codecademy_files/locale-en-e0a597940e083d3490c0420e3fa0a34b.js" type="text/javascript"></script>
+
+        <script src="./Learn Ruby on Rails _ Codecademy_files/vendor-2d6881b3d378d021c563.js" type="text/javascript"></script>
+    <script src="./Learn Ruby on Rails _ Codecademy_files/platform-2d6881b3d378d021c563.js" type="text/javascript"></script><iframe src="./Learn Ruby on Rails _ Codecademy_files/js_runner-f24621759fb7fdfa9f0541fe924a6a3a.html" style="display: none;"></iframe>
+
+  
+
+<div class="ReactModalPortal"><!-- react-empty: 58 --></div>
+  <script type="text/javascript" id="" charset="utf-8" src="./Learn Ruby on Rails _ Codecademy_files/a-00xh.min.js"></script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Learn Ruby on Rails _ Codecademy_files/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+<div id="ads"></div><script type="text/javascript" id="">0<jQuery('.butterbar__message:contains("Welcome! You have signed up successfully.")').length&&0<=window.location.pathname.indexOf("/catalog/")&&dataLayer.push({event:"sign-up-event"});</script></body></html>
