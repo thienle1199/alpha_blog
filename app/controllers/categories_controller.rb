@@ -23,6 +23,17 @@ def show
   @category_articles = @category.articles.paginate(page: params[:page], per_page: 5)
 end
 
+def edit
+  @category = Category.find(params[:id])
+end
+
+def update
+  if @category = Category.update(category_params)
+    flash[:success] = 'Category has been successfully updated'
+  else
+    render 'update'
+  end
+end
 private
   def category_params
     params.require(:category).permit(:name)

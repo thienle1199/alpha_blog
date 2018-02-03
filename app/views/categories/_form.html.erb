@@ -1,0 +1,8 @@
+<%= render 'shared/errors', obj: @category %>
+
+  <%= simple_form_for(@category, wrapper: :horizontal_form, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+  <%= f.input :name %>
+  <div class="col-sm-2 col-sm-offset-2">    
+  <%= f.button :submit %>
+  </div>  
+<% end %>
